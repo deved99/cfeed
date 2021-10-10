@@ -20,7 +20,7 @@ pub fn run() {
     application.connect_activate(move |a| {
         let window = ApplicationWindow::builder()
             .application(a)
-            .title("First GTK Program")
+            .title("cFeed")
             .default_width(1920)
             .default_height(1080)
             .build();
