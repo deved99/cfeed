@@ -20,9 +20,9 @@ pub enum CustomError {
 
 pub fn get_config_path() -> String {
     match var("XFG_CONFIG_HOME") {
-        Ok(s) => format!("{}/feeder/config.json", s),
+        Ok(s) => format!("{}/cfeed/config.json", s),
         Err(_) => match var("HOME") {
-            Ok(s) => format!("{}/.config/feeder/config.json", s),
+            Ok(s) => format!("{}/.config/cfeed/config.json", s),
             Err(_) => term!("$HOME not defined?")
         }
     }

@@ -14,7 +14,7 @@ use gtk4::{
 
 pub fn run() {
     let application = Application::builder()
-        .application_id("org.deved99.feeder")
+        .application_id("org.deved99.cfeed")
         .build();
 
     application.connect_activate(move |a| {
